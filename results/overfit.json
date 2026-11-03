@@ -1,0 +1,23 @@
+{
+ "model": "rq",
+ "repo": "LM_2022_RQ-Transformer",
+ "target_repo": "LM_Dec_Long_RQTransformer",
+ "category": "Long",
+ "upstream": "lucidrains/RQ-Transformer (MIT)",
+ "unified": [
+  "bytes reshaped to spatial x depth with depth 8; spatial 6 layers, depth 2 layers"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "overfit",
+ "started": "2026-10-19 14:37:18",
+ "smoke": false,
+ "first_ce": 5.7112250328063965,
+ "last_ce": 0.0013999920338392258,
+ "passed": true,
+ "pass_loss": 0.5,
+ "steps": 400,
+ "seconds": 13.1,
+ "lr": 0.001,
+ "note": "overfit uses Adam 1e-3 on 4 x 256 bytes; only an implementation check"
+}

@@ -1,0 +1,73 @@
+{
+ "model": "rq",
+ "repo": "LM_2022_RQ-Transformer",
+ "target_repo": "LM_Dec_Long_RQTransformer",
+ "category": "Long",
+ "upstream": "lucidrains/RQ-Transformer (MIT)",
+ "unified": [
+  "bytes reshaped to spatial x depth with depth 8; spatial 6 layers, depth 2 layers"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "scaling",
+ "started": "2026-10-19 14:22:54",
+ "smoke": false,
+ "rows": [
+  {
+   "len": 512,
+   "train": {
+    "peak_mb": 120.0,
+    "ms": 20.9
+   },
+   "infer": {
+    "peak_mb": 59.0,
+    "ms": 8.7
+   }
+  },
+  {
+   "len": 1024,
+   "train": {
+    "peak_mb": 126.6,
+    "ms": 21.5
+   },
+   "infer": {
+    "peak_mb": 66.5,
+    "ms": 8.5
+   }
+  },
+  {
+   "len": 2048,
+   "train": {
+    "peak_mb": 208.8,
+    "ms": 21.4
+   },
+   "infer": {
+    "peak_mb": 87.3,
+    "ms": 8.0
+   }
+  },
+  {
+   "len": 4096,
+   "train": {
+    "peak_mb": 404.6,
+    "ms": 21.9
+   },
+   "infer": {
+    "peak_mb": 122.1,
+    "ms": 9.6
+   }
+  },
+  {
+   "len": 8192,
+   "train": {
+    "peak_mb": 898.7,
+    "ms": 40.4
+   },
+   "infer": {
+    "peak_mb": 196.5,
+    "ms": 16.0
+   }
+  }
+ ],
+ "seconds": 3.6
+}

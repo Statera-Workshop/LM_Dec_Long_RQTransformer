@@ -1,0 +1,28 @@
+{
+ "model": "rq",
+ "repo": "LM_2022_RQ-Transformer",
+ "target_repo": "LM_Dec_Long_RQTransformer",
+ "category": "Long",
+ "upstream": "lucidrains/RQ-Transformer (MIT)",
+ "unified": [
+  "bytes reshaped to spatial x depth with depth 8; spatial 6 layers, depth 2 layers"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "verify5",
+ "started": "2026-10-20 08:49:27",
+ "smoke": false,
+ "rows": {
+  "512": {
+   "normal": 0.1181640625,
+   "values": 0.02001953125,
+   "keys": 0.105224609375
+  },
+  "2048": {
+   "normal": 0.111083984375,
+   "values": 0.0146484375,
+   "keys": 0.11083984375
+  }
+ },
+ "seconds": 4.3
+}
